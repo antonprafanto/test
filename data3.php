@@ -1,5 +1,5 @@
 <?php
-require_once('menu3.php');
+require_once('menu.php');
 
 // Berikan harga dan gambar ke setiap new Menu()
 $juice = new Menu('JUS', 6, 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/juice.png');
