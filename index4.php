@@ -1,4 +1,4 @@
-<?php require_once('data3.php') ?>
+<?php require_once('data.php') ?>
 
 <!DOCTYPE html>
 <html>
@@ -14,11 +14,10 @@
     <div class="menu-items">
       <?php foreach ($menus as $menu): ?>
         <div class="menu-item">
-          <!-- Cetak property image milik $menu -->
-          <img src="<?php echo $menu->image ?>">
+          <img src="<?php echo $menu->image ?>" class="menu-item-image">
           <h3 class="menu-item-name"><?php echo $menu->name ?></h3>
-          <!-- Cetak property price milik $menu -->
-          <p class="price">$<?php echo $menu->price ?></p>
+          <!-- Cetak nilai hasil method getTaxIncludedPrice -->
+          <p class="price">$<?php echo $menu->getTaxIncludedPrice() ?> (termasuk pajak)</p>
         </div>
       <?php endforeach ?>
     </div>
